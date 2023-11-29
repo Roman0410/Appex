@@ -1,0 +1,82 @@
+.hero-title {
+  font-family: "Bebas Neue", sans-serif;
+  color: #fff;
+  font-size: 80px;
+  line-height: normal;
+  font-weight: 400;
+  span {
+    text-decoration: underline;
+  }
+  @media screen and (margin-top: 768px) {
+    font-size: 74px;
+  }
+}
+.hero-subtitle {
+  font-family: "Bebas Neue", sans-serif;
+  color: #fff;
+  font-size: 48px;
+  line-height: normal;
+  span {
+    text-decoration: underline;
+  }
+  @media screen and (margin-top: 768px) {
+    font-size: 36px;
+  }
+}
+.back-text {
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(138, 138, 138);
+}
+.text_16 {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.text_20 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  @media screen and (max-width: 500px) {
+    font-size: 16px;
+  }
+}
+.title_16 {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.title_32 {
+  color: #e4191b;
+  font-family: Bebas Neue;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.section-title {
+  color: #2b49c3;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  @media screen and (max-width: 768px) {
+    font-size: 56px;
+  }
+}
+.card-title {
+}
+.item-title {
+}
+.background-text {
+}
