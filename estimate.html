@@ -123,87 +123,92 @@
         </div>
       </div>
     </header>
-    <section class="virtualEstimate">
-      <div class="container">
-        <div class="card">
-          <h2 class="section-title">Virtual estimate</h2>
-          <form action="" id="estimate">
-            <div class="row">
-              <input type="text" name="name" placeholder="First Name*" />
-              <input type="text" name="phone" placeholder="Phone number*" />
-            </div>
-            <input type="text" name="email" placeholder="Email*" />
-            <div class="rowTab">
-              <p class="question">What fulfillment method do you use? *</p>
-              <div class="radio-list">
-                <label class="container"
-                  >Yes
-                  <input type="radio" value="Yes" name="1" />
-                  <span class="checkmark"></span>
-                </label>
-                <label class="container"
-                  >No
-                  <input type="radio" value="No" name="1" />
-                  <span class="checkmark"></span>
-                </label>
+    <section
+      class="virtualEstimate"
+      style="background-image: url('./img/estimate.jpeg')"
+    >
+      <div class="wrapper">
+        <div class="container">
+          <div class="card">
+            <h2 class="section-title">Virtual estimate</h2>
+            <form action="" id="estimate">
+              <div class="row">
+                <input type="text" name="name" placeholder="First Name*" />
+                <input type="text" name="phone" placeholder="Phone number*" />
               </div>
-            </div>
-            <select name="" id="">
-              <option value="" selected>Service</option>
-              <option value="EMERGENCY WINDOW GLASS REPAIR">
-                EMERGENCY WINDOW GLASS REPAIR
-              </option>
-              <option value="WOOD WINDOW REPAIR">WOOD WINDOW REPAIR</option>
-              <option value="BROKEN GLASS REPLACEMENT">
-                BROKEN GLASS REPLACEMENT
-              </option>
-              <option value="FOGGY WINDOW REPAIR">FOGGY WINDOW REPAIR</option>
-              <option value="HARDWARE REPAIR">HARDWARE REPAIR</option>
-              <option value="COMMERCIAL GLASS REPAIR & REPLACEMENT">
-                COMMERCIAL GLASS REPAIR & REPLACEMENT
-              </option>
-              <option value="HOUSE WINDOW REPAIR & REPLACEMENT SERVICE">
-                HOUSE WINDOW REPAIR & REPLACEMENT SERVICE
-              </option>
-              <option value="INSULATED GLASS REPLACEMENT">
-                INSULATED GLASS REPLACEMENT
-              </option>
-              <option value="ROTTEN WINDOWS REPAIR">
-                ROTTEN WINDOWS REPAIR
-              </option>
-              <option value="HOME WINDOW REPLACEMENT SERVICES">
-                HOME WINDOW REPLACEMENT SERVICES
-              </option>
-              <option value="PATIO DOOR SCREENS">PATIO DOOR SCREENS</option>
-            </select>
-            <textarea placeholder="Description of the problem"></textarea>
-            <div class="drop column">
-              <p class="text">Upload pictures and/or videos*</p>
-
-              <div class="drop-place column">
-                <p class="section-subtitle">Drop files here.</p>
-                <div class="form-group">
-                  <input
-                    type="file"
-                    name="file"
-                    id="file"
-                    class="input-file"
-                    form="rent-form"
-                  />
-                  <label for="file" class="btn btn-tertiary js-labelFile">
-                    <img src="./img/file.svg" alt="" />
-                    <span class="js-fileName">Choose a file</span>
+              <input type="text" name="email" placeholder="Email*" />
+              <div class="rowTab">
+                <p class="question">Property information*</p>
+                <div class="radio-list">
+                  <label class="container"
+                    >Residential
+                    <input type="radio" value="Residential" name="1" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container"
+                    >Commercial
+                    <input type="radio" value="Commercial" name="1" />
+                    <span class="checkmark"></span>
                   </label>
                 </div>
               </div>
-              <p class="text">
-                Please provide clear photos of your window. Include a close-up
-                of the problem area and a full view from inside the room without
-                obstructions. Well-lit, focused photos from different angles are
-                ideal.
-              </p>
-            </div>
-          </form>
+              <select name="" id="">
+                <option value="" selected>Service</option>
+                <option value="EMERGENCY WINDOW GLASS REPAIR">
+                  EMERGENCY WINDOW GLASS REPAIR
+                </option>
+                <option value="WOOD WINDOW REPAIR">WOOD WINDOW REPAIR</option>
+                <option value="BROKEN GLASS REPLACEMENT">
+                  BROKEN GLASS REPLACEMENT
+                </option>
+                <option value="FOGGY WINDOW REPAIR">FOGGY WINDOW REPAIR</option>
+                <option value="HARDWARE REPAIR">HARDWARE REPAIR</option>
+                <option value="COMMERCIAL GLASS REPAIR & REPLACEMENT">
+                  COMMERCIAL GLASS REPAIR & REPLACEMENT
+                </option>
+                <option value="HOUSE WINDOW REPAIR & REPLACEMENT SERVICE">
+                  HOUSE WINDOW REPAIR & REPLACEMENT SERVICE
+                </option>
+                <option value="INSULATED GLASS REPLACEMENT">
+                  INSULATED GLASS REPLACEMENT
+                </option>
+                <option value="ROTTEN WINDOWS REPAIR">
+                  ROTTEN WINDOWS REPAIR
+                </option>
+                <option value="HOME WINDOW REPLACEMENT SERVICES">
+                  HOME WINDOW REPLACEMENT SERVICES
+                </option>
+                <option value="PATIO DOOR SCREENS">PATIO DOOR SCREENS</option>
+              </select>
+              <textarea placeholder="Description of the problem"></textarea>
+              <div class="drop column">
+                <p class="text">Upload pictures and/or videos*</p>
+
+                <div class="drop-place">
+                  <img src="./img/drop.svg" alt="" />
+                  <p class="title_16">Drop files here.</p>
+                  <div class="form-group">
+                    <input
+                      type="file"
+                      name="file"
+                      id="file"
+                      class="input-file"
+                    />
+                    <label for="file" class="btn btn-tertiary js-labelFile">
+                      <span class="js-fileName">Choose a file</span>
+                    </label>
+                  </div>
+                </div>
+                <p class="text">
+                  Please provide clear photos of your window. Include a close-up
+                  of the problem area and a full view from inside the room
+                  without obstructions. Well-lit, focused photos from different
+                  angles are ideal.
+                </p>
+              </div>
+              <button type="submit" class="btn">Send</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>

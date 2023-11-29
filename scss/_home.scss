@@ -1123,7 +1123,8 @@
   .slide {
     max-height: 500px;
     height: 100%;
-    min-height: 600px;
+    min-height: 800px;
+    border-radius: 32px;
 
     @media screen and (max-width: 768px) {
       max-height: 400px;
@@ -1192,10 +1193,18 @@
     border-radius: 0 32px 0 32px;
     overflow: hidden;
     position: relative;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      border-radius: 32px;
+      img {
+        transform: scale(1.1);
+      }
+    }
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: all 0.2s ease-in-out;
     }
   }
   .card {
@@ -1205,10 +1214,12 @@
     padding: 16px;
     .text_16 {
       color: #fff;
+      cursor: pointer;
     }
   }
   .title_16 {
     color: #fff;
+    cursor: pointer;
   }
   .slider-navigation {
     @media screen and (max-width: 1024px) {
@@ -1646,6 +1657,14 @@
 }
 
 .rowTab {
+  .question {
+    color: #757575;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
   .radio-list {
     display: flex;
     gap: 24px;
@@ -1680,7 +1699,8 @@
       height: 20px;
       width: 20px;
       border-radius: 50%;
-      background: #1f2b48;
+      background: #ffffff;
+      border: 1px solid #ccc;
       backdrop-filter: blur(50px);
     }
 
@@ -1695,10 +1715,11 @@
     }
 
     .container .checkmark:after {
-      top: 5px;
-      left: 5px;
-      width: 10px;
-      height: 10px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 14px;
+      height: 14px;
       border-radius: 50%;
       background: var(--accent-color);
     }
@@ -1716,7 +1737,15 @@
     gap: 10px;
     cursor: pointer;
   }
-
+  .text {
+    color: #757575;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 8px;
+  }
   /* input file style */
   .input-file {
     width: 0.1px;
@@ -1735,15 +1764,138 @@
     }
   }
   .drop-place {
-    border: 1px dashed gray;
-    border-radius: 8px;
+    border: 1px solid #ccc;
+    border-radius: 32px;
+    background-color: #fff;
     padding: 32px;
-    .section-subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 16px;
+    .title_16 {
       text-align: center;
       color: #7e7e7e;
+      font-weight: 400;
+      font-size: 14px;
     }
     .btn {
-      width: 100%;
+      background-color: #a0a0a0;
+      color: #ffffff;
+      line-height: normal;
+      padding: 16px;
+      font-size: 14px;
+      font-weight: 400;
     }
+  }
+}
+.virtualEstimate {
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  .wrapper {
+    padding: 119px 0 88px 0;
+    @media screen and (max-width: 768px) {
+      padding: 64px 0;
+    }
+    background: rgba(21, 19, 19, 0.28);
+  }
+  .container {
+  }
+  .card {
+    border-radius: 24px;
+    background: #edf4ff;
+    padding: 32px 48px;
+    max-width: 724px;
+  }
+  .section-title {
+    margin-bottom: 24px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  input {
+    width: 100%;
+    padding: 16px;
+    border-radius: 100px;
+    border: 1px solid #ccc;
+    background: #fff;
+    &::placeholder {
+      color: #757575;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  select {
+    padding: 16px;
+    border-radius: 100px;
+    border: 1px solid #ccc;
+    background: #fff;
+    font-family: Inter;
+    font-size: 14px;
+    color: #757575;
+    appearance: none;
+    background: url("../img/selectArrow.svg") 97% / 5% no-repeat #ffffff;
+  }
+  textarea {
+    padding: 16px;
+    border-radius: 32px;
+    border: 1px solid #ccc;
+    background: #fff;
+    resize: none;
+    font-family: inherit;
+    height: 123px;
+    &::placeholder {
+      color: #757575;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+.row {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .rowTab {
+  }
+
+  .radio-list {
+  }
+  .checkmark {
+  }
+  .drop {
+  }
+  .column {
+  }
+  .text {
+  }
+  .drop-place {
+  }
+  .section-subtitle {
+  }
+  .form-group {
+  }
+  .input-file {
+  }
+  .btn {
+  }
+  .btn-tertiary {
+  }
+  .js-labelFile {
+  }
+  .js-fileName {
   }
 }

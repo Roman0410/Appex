@@ -208,10 +208,11 @@ header.header {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   background: var(--blue);
+  border-bottom: 1px solid rgb(177, 177, 177);
 }
 header.header.header-scroll .logo {
   height: 64px;
-  top: 0;
+  top: 0px;
 }
 header.header.header-scroll .logo img {
   max-width: 160px;
@@ -2147,7 +2148,8 @@ header.header .sub-menu .sub-menu-item:hover a {
 .beforeAfter .slide {
   max-height: 500px;
   height: 100%;
-  min-height: 600px;
+  min-height: 800px;
+  border-radius: 32px;
 }
 @media screen and (max-width: 768px) {
   .beforeAfter .slide {
@@ -2222,12 +2224,23 @@ header.header .sub-menu .sub-menu-item:hover a {
   border-radius: 0 32px 0 32px;
   overflow: hidden;
   position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.other-service .other-slide:hover {
+  border-radius: 32px;
+}
+.other-service .other-slide:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .other-service .other-slide img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .other-service .card {
   position: absolute;
@@ -2237,9 +2250,11 @@ header.header .sub-menu .sub-menu-item:hover a {
 }
 .other-service .card .text_16 {
   color: #fff;
+  cursor: pointer;
 }
 .other-service .title_16 {
   color: #fff;
+  cursor: pointer;
 }
 @media screen and (max-width: 1024px) {
   .other-service .slider-navigation {
@@ -2840,6 +2855,14 @@ header.header .sub-menu .sub-menu-item:hover a {
   transition: all 0.25s ease-in;
 }
 
+.rowTab .question {
+  color: #757575;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .rowTab .radio-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2883,7 +2906,8 @@ header.header .sub-menu .sub-menu-item:hover a {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background: #1f2b48;
+  background: #ffffff;
+  border: 1px solid #ccc;
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
 }
@@ -2896,10 +2920,12 @@ header.header .sub-menu .sub-menu-item:hover a {
   display: block;
 }
 .rowTab .radio-list .container .checkmark:after {
-  top: 5px;
-  left: 5px;
-  width: 10px;
-  height: 10px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background: var(--accent-color);
 }
@@ -2924,6 +2950,15 @@ header.header .sub-menu .sub-menu-item:hover a {
   gap: 10px;
   cursor: pointer;
 }
+.drop .text {
+  color: #757575;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 8px;
+}
 .drop .input-file {
   width: 0.1px;
   height: 0.1px;
@@ -2943,18 +2978,196 @@ header.header .sub-menu .sub-menu-item:hover a {
   cursor: pointer;
 }
 .drop .drop-place {
-  border: 1px dashed gray;
-  border-radius: 8px;
+  border: 1px solid #ccc;
+  border-radius: 32px;
+  background-color: #fff;
   padding: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
 }
-.drop .drop-place .section-subtitle {
+.drop .drop-place .title_16 {
   text-align: center;
   color: #7e7e7e;
+  font-weight: 400;
+  font-size: 14px;
 }
 .drop .drop-place .btn {
-  width: 100%;
+  background-color: #a0a0a0;
+  color: #ffffff;
+  line-height: normal;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 400;
 }
 
+.virtualEstimate {
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+}
+.virtualEstimate .wrapper {
+  padding: 119px 0 88px 0;
+  background: rgba(21, 19, 19, 0.28);
+}
+@media screen and (max-width: 768px) {
+  .virtualEstimate .wrapper {
+    padding: 64px 0;
+  }
+}
+.virtualEstimate .card {
+  border-radius: 24px;
+  background: #edf4ff;
+  padding: 32px 48px;
+  max-width: 724px;
+}
+.virtualEstimate .section-title {
+  margin-bottom: 24px;
+}
+.virtualEstimate form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.virtualEstimate input {
+  width: 100%;
+  padding: 16px;
+  border-radius: 100px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+.virtualEstimate input::-webkit-input-placeholder {
+  color: #757575;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.virtualEstimate input::-moz-placeholder {
+  color: #757575;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.virtualEstimate input:-ms-input-placeholder {
+  color: #757575;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.virtualEstimate input::-ms-input-placeholder {
+  color: #757575;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.virtualEstimate input::placeholder {
+  color: #757575;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.virtualEstimate select {
+  padding: 16px;
+  border-radius: 100px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  color: #757575;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("../img/selectArrow.svg") 97%/5% no-repeat #ffffff;
+}
+.virtualEstimate textarea {
+  padding: 16px;
+  border-radius: 32px;
+  border: 1px solid #ccc;
+  background: #fff;
+  resize: none;
+  font-family: inherit;
+  height: 123px;
+}
+.virtualEstimate textarea::-webkit-input-placeholder {
+  color: #757575;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.virtualEstimate textarea::-moz-placeholder {
+  color: #757575;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.virtualEstimate textarea:-ms-input-placeholder {
+  color: #757575;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.virtualEstimate textarea::-ms-input-placeholder {
+  color: #757575;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.virtualEstimate textarea::placeholder {
+  color: #757575;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+@media screen and (max-width: 500px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+  }
+}
 /* Слайдер */
 /* Слайдер запущен */
 /* Слайдер с точками */
@@ -3031,6 +3244,7 @@ header.header .sub-menu .sub-menu-item:hover a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  cursor: pointer;
 }
 .slider-navigation .btn {
   background-color: var(--blue);
